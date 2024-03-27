@@ -3,22 +3,40 @@
   padding: 0;
 }
 
+:root {
+  --color-1: #9c44cc;
+  --color-2: #b29be3;
+  --color-3: #6c2c84;
+  --color-4: #7964a7;
+  --color-5: #ccaedc;
+  --color-6: #413765;
+}
+
 html {
   font-size: 100%;
   font-family: "Pixelify Sans", sans-serif;
 }
 
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-4);
+}
+
 .container {
   height: 100vh;
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  background-color: var(--color-2);
 }
 
 #square {
-  height: 300px;
-  width: 300px;
-  background-color: black;
+  height: 250px;
+  width: 250px;
+  background-color: white;
+  border: 10px double var(--color-6);
 }
