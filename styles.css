@@ -34,6 +34,16 @@ body {
   background-color: var(--color-2);
 }
 
+.container_main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.buttons_size_control {
+  display: flex;
+  flex-direction: column;
+}
 #square {
   height: 250px;
   width: 250px;
