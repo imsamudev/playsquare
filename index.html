@@ -5,14 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="PlaySquare" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
     <script defer src="script.js"></script>
 
     <title>Play with this square!</title>
@@ -21,8 +14,33 @@
     <div class="container">
       <h1>Play with me!</h1>
       <div class="container_main">
-        <div class="buttons_size_control"></div>
-        <div class="square" id="square"></div>
+        <div class="buttons_control">
+          <div class="change_size">
+            <h3 class="title_buttons">Change size</h3>
+            <button class="control" data-action="50">+</button>
+            <button class="control" data-action="-50">-</button>
+            <button class="control" id="reset">↩</button>
+          </div>
+          <div id="paleta">
+            <h3 class="title_buttons">Change color</h3>
+            <div class="color" style="background-color: red"></div>
+            <div class="color" style="background-color: blue"></div>
+            <div class="color" style="background-color: yellow"></div>
+            <div class="color" style="background-color: green"></div>
+            <div class="color" style="background-color: orange"></div>
+            <div class="color" style="background-color: purple"></div>
+            <button class="control" id="resetColor">↩</button>
+          </div>
+          <div class="rotate_control">
+            <h3 class="title_buttons">Rotate</h3>
+            <button class="control" id="left">←</button>
+            <button class="control" id="right">→</button>
+            <button class="control" id="resetRotate">↩</button>
+          </div>
+        </div>
+        <div class="container_box">
+          <div id="caja"></div>
+        </div>
       </div>
     </div>
   </body>
